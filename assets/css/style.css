@@ -1,0 +1,428 @@
+body {
+  font-family: roboto, sans-serif;
+
+  animation: fadeIn ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+html {
+  scroll-behavior: smooth;
+
+}
+
+#mainNav {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 60%;
+  left: 20%;
+  top: 0px;
+  background: #eee;
+  transition: background 0.4s;
+  z-index: 99;
+  font-family: Lato;
+}
+
+#home:hover {
+  cursor:pointer;
+}
+
+/* Scroll style effects */
+
+.bg-change {
+  background: #20A4F3 !important;
+}
+
+.txt-white a {
+  color: #F6FFFF !important;
+  font-weight: bolder;
+}
+
+
+
+
+  /* Section Styles */
+
+section {
+  height: 700px;
+  width: 60%;
+  margin-left: 20%;
+}
+
+#section1 {
+  margin-top: 120px;
+}
+
+#section2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+
+h1, h2 {
+  font-size: 60px;
+  font-family: Lato, sans-serif;
+}
+
+h1 {
+  display: flex;
+}
+
+
+
+.box {
+  height: 600px;
+  width: 750px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h3, h4 {
+  font-family: Lato;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+h3 {
+  color: #20A4F3;
+}
+
+h4 {
+  color: #D77A61;
+}
+
+h5 {
+  font-family: Lato;
+  font-size: 18px;
+
+  position: absolute;
+  left: 44.5%;
+}
+
+.description {
+  height: 300px;
+  width: 700px;
+
+  padding-left: 10px;
+  margin: 5px;
+
+  font-style: Lato, sans-serif;
+  color: #102B3F;
+  line-height: 32px;
+  font-size: 18px;
+}
+
+#description1 {
+  background: #F6F8FF;
+  border-style: solid;
+  border-width: thick;
+  border-color: #20A4F3;
+
+}
+
+#description2 {
+  background: #FCF7FF;
+  border-style: solid;
+  border-width: thick;
+  border-color: #D77A61;
+}
+
+.flags {
+  height: 100px;
+  width: 100px;
+
+  padding: 20px;
+  border-radius: 70px;
+
+
+}
+
+img.flags {
+    animation: spin 15s linear  infinite;
+}
+
+img.flags:hover {
+  opacity: 0.9;
+  transition: 0.8s;
+  box-shadow:
+         1px 1px #53a7ea,
+         2px 2px #53a7ea,
+         3px 3px #53a7ea;
+ transform: translateX(-3px);
+}
+
+
+#box2 {
+  border-color: black;
+  width: 200px;
+}
+
+footer {
+  height: 70px;
+  margin-left: 20%;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #223843;
+  color: #eee;
+}
+
+#linkedin {
+  text-decoration: none;
+  color: #eee;
+  padding-left: 5px;
+}
+
+#linkedin:hover {
+  color: #B0D0D3;
+  transition: 0.3s;
+}
+
+/* NAV Items */
+
+#mainNav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  width: 400px;
+  justify-content: space-around;
+}
+#mainNav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.4s;
+}
+
+li:hover {
+  opacity: 0.5;
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+#mainNav .logo img {
+  height: 84px;
+  transition: height 0.4s;
+
+}
+
+
+
+
+.guitar img {
+  position: absolute;
+  left: 65%;
+  top: 17%;
+  height: 600px;
+
+}
+
+.guitarRotate1 {
+  transform: translate(-500px, 200px) rotate(90deg);
+  transition-duration: 1s;
+}
+
+.guitarRotate2 {
+  transition-duration: 0.8s;
+}
+
+
+
+/* Animations */
+
+@keyframes bounce {
+    0%   { transform: scale(1,1)    translateY(0); }
+    10%  { transform: scale(1.1,.9) translateY(0); }
+    30%  { transform: scale(.9,1.1) translateY(30px); }
+    50%  { transform: scale(1,1)    translateY(0); }
+    57%  { transform: scale(1,1)    translateY(7px); }
+    64%  { transform: scale(1,1)    translateY(0); }
+    100% { transform: scale(1,1)    translateY(0); }
+}
+
+@keyframes fadecolor {
+  0% { color: red; }
+  25% { color: blue; }
+  50% { color: green; }
+  75% { color: yellow; }
+  100% { color: orange; }
+}
+
+@keyframes fadecolor2 {
+  0% { color: #2B102D; }
+  25% { color: #ACCBE1; }
+  50% { color: #7C98B3; }
+  75% { color: #637081; }
+  100% { color: #373737; }
+}
+
+
+@keyframes spin {
+  from {transform: rotate(0deg); }
+  to {transform: rotate(360deg); }
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0}
+  100% { opacity: 1; }
+}
+
+/* Text styles */
+
+#intro {
+  font-style: Lato;
+  font-size: 20px;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+}
+
+span#down {
+  animation: bounce 2s infinite;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+span#face {
+  animation: fadecolor 2s linear infinite;
+}
+
+a#resume {
+  color: green;
+  font-weight: bold;
+  text-decoration: none;
+
+
+  padding-left: 5px;
+  padding-right: 5px;
+
+  animation: fadecolor2 2s  infinite linear 0.5s;
+}
+
+
+/* Flip Card */
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 65px;
+  perspective: 1000px;
+
+  margin-left: 10px;
+  margin-right: 10px;
+
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #00BD9D;
+  color: black;
+
+}
+
+.flip-card-back {
+  background-color: #2E4052;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
+/* Carousel */
+
+#carousel,
+.carousel-image {
+  width: 500px;
+  height: 500px;
+
+  left: 25%;
+  top: 12%;
+}
+
+/* Carousel frame setup */
+
+#carousel {
+  position: relative;
+  border: 10px solid #eee;
+  /* Part 3.2: Hide stuff that overflows the box */
+  overflow: hidden;
+}
+
+/* Images */
+
+#carousel-image-row {
+  /* Part 1.2: Make images appear in a row */
+  display: flex;
+  flex-direction: row;
+  /* Part 1.3: What kind of positioning? */
+  position: relative;
+  left: 0px;
+  /* Part 3.1: Add transition */
+  transition: 0.5s left;
+}
+
+.carousel-image img {
+  height: 100%;
+  width: auto;
+}
+
+/* Controls */
+
+.hidden {
+  visibility: hidden;
+}
+
+#img1 {
+  transform: rotate(90deg);
+}
+
+/* Part 4: optional button styling */
+
+#carousel-controls {
+    /* vertically center */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    /* spacing between the two buttons */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    /* appear in front of images */
+    z-index: 1;
+}
+
+#button-next,
+#button-previous {
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
