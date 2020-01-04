@@ -291,7 +291,7 @@ footer {
   width: 10px !important;
   opacity: 0.5;
 
-  transition: 0.5s;
+  transition: 0.5s !important;
 }
 
 .sidenavshift {
@@ -341,7 +341,7 @@ footer {
 }
 
 .guitarRotate2 {
-  transition-duration: 0.8s;
+  transition-duration: 1.5s;
 }
 
 .logorevert {
