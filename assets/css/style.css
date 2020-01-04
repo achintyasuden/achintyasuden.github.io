@@ -52,6 +52,11 @@ html {
   color: #102B3F !important;
 }
 
+.opacity-increase {
+  opacity: 1 !important;
+  transition: 0.5s;
+}
+
 
 
 
@@ -132,10 +137,10 @@ h5 {
   font-size: 18px;
   color: 102B3F;
 
-  font-weight: bold;
+  font-weight: normal;
 
   position: absolute;
-  left: 43%;
+  left: 41%;
   padding-top: 2%;
 }
 
@@ -258,6 +263,11 @@ footer {
   justify-content: space-between;
 
 
+}
+
+#sideNav a:hover {
+  opacity:0.5;
+  transition: 0.5s;
 }
 
 .fa {
@@ -404,14 +414,14 @@ span#face {
 
 a#resume {
   color: green;
-  font-weight: bold;
+  font-weight: normal;
   text-decoration: none;
 
 
   padding-left: 5px;
   padding-right: 5px;
 
-  animation: fadecolor2 2s  infinite linear 0.5s;
+  animation: fadecolor2 1.5s  infinite linear 0.5s;
 }
 
 
@@ -469,7 +479,7 @@ a#resume {
   width: 500px;
   height: 500px;
 
-  left: 28%;
+  left: 26%;
   top: 15%;
 
 }

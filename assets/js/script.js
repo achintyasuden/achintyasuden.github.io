@@ -37,6 +37,7 @@ window.addEventListener("scroll", function() {
     for (i = 0; i < logos.length; i++) {
         logos[i].classList.remove("bg-remove");
         logos[i].classList.remove("logo-shift");
+        logos[i].classList.add('logorevert');
     }
   }
 });
