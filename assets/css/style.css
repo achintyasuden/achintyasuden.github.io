@@ -30,6 +30,8 @@ html {
   box-shadow: 0 3px 3px 0 rgba(0,0,0,0.2);
 }
 
+
+
 #home:hover {
   cursor:pointer;
 }
@@ -44,6 +46,14 @@ html {
   color: #F6FFFF !important;
   font-weight: bolder;
 }
+
+.bg-remove {
+  background: none !important;
+  color: #102B3F !important;
+}
+
+
+
 
 
 
@@ -225,7 +235,7 @@ footer {
   transition: color 0.4s;
 }
 
-li:hover {
+#mainNav li:hover {
   opacity: 0.5;
   transform: scale(1.1);
   transition: 0.5s;
@@ -235,6 +245,73 @@ li:hover {
   height: 84px;
   transition: height 0.4s;
 
+}
+
+#sideNav {
+  position: fixed;
+  width: 0;
+  left: 4.3%;
+  height: 100px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+
+}
+
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+
+
+  transition: background 0.5s;
+
+
+}
+
+.logo-shift {
+  padding: 8px !important;
+  font-size: 18px !important;
+  width: 10px !important;
+  opacity: 0.5;
+
+  transition: 0.5s;
+}
+
+.sidenavshift {
+  left: 3.4% !important;
+  height: 220px !important;
+  transition: 0.5s !important;
+}
+
+
+
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
 }
 
 
@@ -250,11 +327,15 @@ li:hover {
 
 .guitarRotate1 {
   transform: translate(-280%, 30%) rotate(90deg);
-  transition-duration: 1s;
+  transition-duration: 1s !important;
 }
 
 .guitarRotate2 {
   transition-duration: 0.8s;
+}
+
+.logorevert {
+  transition-duration: 1s;
 }
 
 

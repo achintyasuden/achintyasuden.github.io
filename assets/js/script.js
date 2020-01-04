@@ -2,20 +2,47 @@ window.addEventListener("scroll", function() {
   const logoImage = document.querySelector(".logo img");
   const mainNav = document.getElementById("mainNav");
   const guitarImage = document.querySelector(".guitar img");
+  const logos = document.querySelectorAll(".fa");
+  const sideNav = document.getElementById("sideNav");
 
   if(window.pageYOffset > 0){
     logoImage.style.height = "64px";
     mainNav.classList.add("bg-change");
     mainNav.classList.add("txt-white");
+    sideNav.classList.add("sidenavshift");
     guitarImage.classList.add('guitarRotate1');
-  } else {
+
+
+    var i;
+    for (i = 0; i < logos.length; i++) {
+        logos[i].classList.add("bg-remove")
+        logos[i].classList.add("logo-shift");
+    }
+
+
+  }
+
+
+
+   else {
     logoImage.style.height = "84px";
     mainNav.classList.remove("bg-change");
     mainNav.classList.remove('txt-white');
     guitarImage.classList.remove('guitarRotate1');
     guitarImage.classList.add('guitarRotate2');
+    sideNav.classList.remove("sidenavshift");
+    sideNav.classList.add("logorevert");
+
+    var i;
+    for (i = 0; i < logos.length; i++) {
+        logos[i].classList.remove("bg-remove");
+        logos[i].classList.remove("logo-shift");
+    }
   }
 });
+
+
+
 
 
 /* Top function */
