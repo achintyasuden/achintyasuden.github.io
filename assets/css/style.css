@@ -28,6 +28,8 @@ html {
   color: #102B3F;
 
   box-shadow: 0 3px 3px 0 rgba(0,0,0,0.2);
+
+  font-family: Montserrat, sans-serif ;
 }
 
 
@@ -93,16 +95,20 @@ section {
 
 h1, h2 {
   font-size: 55px;
-  font-family: Lato, sans-serif;
+  font-family: Montserrat, sans-serif;
   color: #102B3F;
 
   padding-left: 6%;
+  margin-bottom: 10px;
 }
 
 h1 {
   display: flex;
 }
 
+h2 {
+  margin-top: 10px;
+}
 
 
 .box {
@@ -392,13 +398,14 @@ footer {
 /* Text styles */
 
 #intro {
-  font-style: 'Ibarra Real Nova', serif;
+  font-family: Montserrat, sans-serif;
   font-size: 20px;
   height: 100px;
-  display: flex;
-  flex-direction: row;
+  width: 60%;
+
 
   padding-left: 6%;
+  padding-top: 2%;
   color: #102B3F;
 }
 
@@ -406,11 +413,9 @@ span#down {
   animation: bounce 2s infinite;
   padding-left: 5px;
   padding-right: 5px;
-}
+} 
 
-span#face {
-  animation: fadecolor 2s linear infinite;
-}
+
 
 a#resume {
   color: green;
@@ -418,10 +423,10 @@ a#resume {
   text-decoration: none;
 
 
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 3px;
+  padding-right: 3px;
 
-  animation: fadecolor2 1.5s  infinite linear 0.5s;
+  animation: fadecolor2 3s  infinite linear 0.5s;
 }
 
 
