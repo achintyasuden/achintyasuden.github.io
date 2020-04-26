@@ -117,3 +117,5 @@ function checkControls() {
 	nextButton.classList.remove("hidden");
 	}
 }
+
+
