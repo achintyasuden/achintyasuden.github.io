@@ -525,7 +525,9 @@ a#resume {
 }
 
 #img1 {
-  transform: rotate(90deg);
+  transform: rotate(0deg);
+  height: 500px;
+  width: 500px
 }
 
 /* Part 4: optional button styling */
